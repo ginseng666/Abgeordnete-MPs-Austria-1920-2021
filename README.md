@@ -27,4 +27,4 @@ Note that the political functions, employment and education follow no standardis
 
 As the data was scraped automatically errors due to inconsistent tags are possible.
 
-all data (c) https://www.parliament.gv.at
+all data (c) https://www.parliament.gv.at, the JSON (c) Flooh Perlot (see licence)
