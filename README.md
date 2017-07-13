@@ -1,7 +1,7 @@
 # Nationalratsabgeordnete Österreich/MPs Austria 1920-2017
 JSON with biographical and political data of Austrian Members of Parliament (Nationalrat/1. Chamber) since 1920.
 
-The JSON contains available information about Austrian Members of Parliament (Nationalrat) since 1920. The data was scraped of the official website of the [Austrian parliament](https://www.parlament.gv.at). Last update July 12th, 2017.
+The JSON contains available information about Austrian Members of Parliament (Nationalrat) since 1920. The data was scraped of the official website of the [Austrian parliament](https://www.parlament.gv.at). Last update July 13th, 2017.
 
 The fields are:
 
