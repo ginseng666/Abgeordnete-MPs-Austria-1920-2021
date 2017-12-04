@@ -1,5 +1,5 @@
 # Nationalratsabgeordnete und Mitglieder des Bundesrates Österreich/MPs Austria 1920-2017
-Current version/last update: 27.11.2017
+Current version/last update: 4.12.2017
 
 The JSON contains most of the available information about Austrian Members of Parliament (1. Chamber/Nationalrat and 2. Chamber/Bundesrat) since 1920. The data was scraped of the official website of the [Austrian parliament](https://www.parlament.gv.at).
 
