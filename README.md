@@ -3,7 +3,7 @@ Current version/last update: 27.11.2017
 
 The JSON contains most of the available information about Austrian Members of Parliament (1. Chamber/Nationalrat and 2. Chamber/Bundesrat) since 1920. The data was scraped of the official website of the [Austrian parliament](https://www.parlament.gv.at).
 
-The fields for the 1. Chamber (Nationalrat, elected directly) are:
+nr_complete.json: the fields in the file for the 1. Chamber (Nationalrat, elected directly) are:
 
 * id: string; just an identifier, "nr_" + running number
 * whole_name: string; name of the person, including academic titles
@@ -23,7 +23,7 @@ The fields for the 1. Chamber (Nationalrat, elected directly) are:
 * clubs: array of all parliamentary clubs in which the person was/is a member (note that clubs are not identical with political parties; also there have been several name changes, leading to a larger number of clubs than there were parties in parliament) (Klub)
 * sessions: array of all parliamentary sessions in which the person held a seat (independent of the time the seat was held); they are numbered in roman numerals (V. was the first session of the Second Republic in 1945) (Gesetzgebungsperiode)
 * nr: array; contains objects of each independent time period the person held a seat in the national assembly; the object itself contains the "club" the person was a member of, the start and the end date (strings; dd.mm.yyyy); if the person holds currently a seat, "end" = "ongoing"
-* others: all other seats held by the person as stated in the section "Mandate", split into the following fields:
+* others: all other seats held by the person as stated in the section "Mandate", split into the following fields :
     * br: array; seats in the 2. chamber (Bundesrat)
     * eup: array; seats in the European Parliament
     * government: array; functions in a government (this is a rough summary of very different functions, including federal ministries, secretaries, temporary assignments and so on)
@@ -34,7 +34,7 @@ The fields for the 1. Chamber (Nationalrat, elected directly) are:
 * education: array; contains all entries on the website of the MP about their education
 
 
-The fields for the 2. Chamber (Bundesrat, members are appointed by the regional parliaments) are mostly the same, with two differences:
+br_complete.json_ the fields for the 2. Chamber (Bundesrat, members are appointed by the regional parliaments) are mostly the same, with two differences:
 * the field "nr" is renamed "br" (for Bundesrat): array; contains objects of each independent time period the person held a seat in the second chamber; the object itself contains the "club" the person was a member of, the start and the end date (strings; dd.mm.yyyy); if the person holds currently a seat, "end" = "ongoing"
 * subsequently, the field "br" in the "others"-section is renamed "nr" and contains possible seats in the Nationalrat
 * state: array; this field contains the delegating region, aka the state the Bundesrat is representing
