@@ -34,10 +34,12 @@ nr_complete.json: the fields in the file for the 1. Chamber (Nationalrat, electe
 * education: array; contains all entries on the website of the MP about their education
 
 
+
 br_complete.json_ the fields for the 2. Chamber (Bundesrat, members are appointed by the regional parliaments) are mostly the same, with two differences:
 * the field "nr" is renamed "br" (for Bundesrat): array; contains objects of each independent time period the person held a seat in the second chamber; the object itself contains the "club" the person was a member of, the start and the end date (strings; dd.mm.yyyy); if the person holds currently a seat, "end" = "ongoing"
 * subsequently, the field "br" in the "others"-section is renamed "nr" and contains possible seats in the Nationalrat
 * state: array; this field contains the delegating region, aka the state the Bundesrat is representing
+
 
 
 Note that the political functions, employment and education follow no standardised pattern, the MPs are free to include/exclude information. As several biographical pages are currently not linked correctly on the parliamentary website, the data about these persons is incomplete.
