@@ -1,20 +1,20 @@
-# Nationalratsabgeordnete Österreich/MPs Austria 1920-2017
+# Nationalratsabgeordnete und Mitglieder des Bundesrates Österreich/MPs Austria 1920-2017
 Current version/last update: 27.11.2017
 
-The JSON contains most of the available information about Austrian Members of Parliament (1. Chamber/Nationalrat) since 1920. The data was scraped of the official website of the [Austrian parliament](https://www.parlament.gv.at).
+The JSON contains most of the available information about Austrian Members of Parliament (1. Chamber/Nationalrat and 2. Chamber/Bundesrat) since 1920. The data was scraped of the official website of the [Austrian parliament](https://www.parlament.gv.at).
 
-The fields are:
+The fields for the 1. Chamber (Nationalrat, elected directly) are:
 
 * id: string; just an identifier, "nr_" + running number
 * whole_name: string; name of the person, including academic titles
 * given_name: string; first name(s) of the person
 * surname: string; last name of the person (for sorting and stuff)
-* title: array; (academic) titles of the person
+* title: array; the first entry always contains all titles coming ahead of the name, the second one all titles after the name (empty if no titles are present)
 * academic: boolean; true if person holds an academic title
 * sex: string; m for man, w for woman
 * birth: string; date of birth (dd.mm.yyyy)
 * place_of_birth: string; place of birth
-* place_of_birth_addition: string; sometimes there is additional information given on the place of birth, like a country or a state - note that this is very selective in the source file and the values are not standardised (you might find "Niederöstereich" as well as "NÖ")
+* place_of_birth_addition: string; sometimes there is additional information given on the place of birth, like a country or a state - note that this is very selective in the source file and the values are not standardised (you might find "Niederöstereich" as well as "NÖ", although I've tried to correct at least this inconsistency)
 * death: string; date of death (dd.mm.yyyy) - empty if still alive
 * place_of_death: string; place of death
 * place_of_death_addition: string; see above
@@ -29,14 +29,18 @@ The fields are:
     * government: array; functions in a government (this is a rough summary of very different functions, including federal ministries, secretaries, temporary assignments and so on)
     * others: array; other functions
     * note that the entries in "br" and "eup" follow the logic of the "nr"-field, containing the club, the start and the end date; for government and other functions, the field "club" has been replaced by "function"
-, european parliament or other (this does not contain seats on regional level etc.)
 * pol_functions: array; contains all entries on the website of the MP about their political life
 * employment: array; contains all entries on the website of the MP about their professional life
 * education: array; contains all entries on the website of the MP about their education
 
-Note that the political functions, employment and education follow no standardised pattern, the MPs are free to include/exclude information. As several biographical pages are currently not linked correctly on the parliamentary website, the data about these persons is incomplete.
 
-The former field "lists", showing the lists on which the MP won his/her seat, is not available at the moment because the source page became somewhat unscrapable.
+The fields for the 2. Chamber (Bundesrat, members are appointed by the regional parliaments) are mostly the same, with two differences:
+* the field "nr" is renamed "br" (for Bundesrat): array; contains objects of each independent time period the person held a seat in the second chamber; the object itself contains the "club" the person was a member of, the start and the end date (strings; dd.mm.yyyy); if the person holds currently a seat, "end" = "ongoing"
+* subsequently, the field "br" in the "others"-section is renamed "nr" and contains possible seats in the Nationalrat
+* state: array; this field contains the delegating region, aka the state the Bundesrat is representing
+
+
+Note that the political functions, employment and education follow no standardised pattern, the MPs are free to include/exclude information. As several biographical pages are currently not linked correctly on the parliamentary website, the data about these persons is incomplete.
 
 As the data was scraped automatically errors due to inconsistent tags are possible.
 
