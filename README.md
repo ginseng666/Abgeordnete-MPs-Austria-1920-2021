@@ -1,7 +1,7 @@
-# Nationalratsabgeordnete und Mitglieder des Bundesrates Österreich/MPs Austria 1920-2017
+# Nationalratsabgeordnete, Mitglieder des Bundesrates und Abgeordnete zum Europäischen Parlament Österreich/MPs Austria 1920-2017
 Current version/last update: 4.12.2017
 
-The JSON contains most of the available information about Austrian Members of Parliament (1. Chamber/Nationalrat and 2. Chamber/Bundesrat) since 1920. The data was scraped of the official website of the [Austrian parliament](https://www.parlament.gv.at).
+The JSON contains most of the available information about Austrian Members of Parliament (1. Chamber/Nationalrat and 2. Chamber/Bundesrat) since 1920 as well as information about Austrias Members of the European Parliament since 1995. The data was scraped of the official website of the [Austrian parliament](https://www.parlament.gv.at).
 
 nr_complete.json: the fields in the file for the 1. Chamber (Nationalrat, elected directly) are:
 
@@ -33,15 +33,26 @@ nr_complete.json: the fields in the file for the 1. Chamber (Nationalrat, electe
 * employment: array; contains all entries on the website of the MP about their professional life
 * education: array; contains all entries on the website of the MP about their education
 
+<br>
+<br>
+br_complete.json: the fields for the 2. Chamber (Bundesrat, members are appointed by the regional parliaments) are mostly the same, with three differences:
 
-
-br_complete.json_ the fields for the 2. Chamber (Bundesrat, members are appointed by the regional parliaments) are mostly the same, with two differences:
+* the id starts with "br_"
 * the field "nr" is renamed "br" (for Bundesrat): array; contains objects of each independent time period the person held a seat in the second chamber; the object itself contains the "club" the person was a member of, the start and the end date (strings; dd.mm.yyyy); if the person holds currently a seat, "end" = "ongoing"
 * subsequently, the field "br" in the "others"-section is renamed "nr" and contains possible seats in the Nationalrat
 * state: array; this field contains the delegating region, aka the state the Bundesrat is representing
 
+<br>
+<br>
+eup_complete.json: the fields for the European Parliament are mostly the same, with three differences:
 
+* the id starts with "eup_"
+* the field "nr" is renamed "eup" (for European Parliament): array; contains objects of each independent time period the person held a seat in the second chamber; the object itself contains the "club" the person was a member of, the start and the end date (strings; dd.mm.yyyy); if the person holds currently a seat, "end" = "ongoing"
+* subsequently, the field "eup" in the "others"-section is renamed "nr" and contains possible seats in the Nationalrat
+* there is no field "sessions"
 
+<br>
+<br>
 Note that the political functions, employment and education follow no standardised pattern, the MPs are free to include/exclude information. As several biographical pages are currently not linked correctly on the parliamentary website, the data about these persons is incomplete.
 
 As the data was scraped automatically errors due to inconsistent tags are possible.
