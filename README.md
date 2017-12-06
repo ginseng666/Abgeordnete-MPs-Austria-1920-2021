@@ -53,7 +53,7 @@ eup_complete.json: the fields for the European Parliament are mostly the same, w
 
 <br>
 <br>
-Note that the political functions, employment and education follow no standardised pattern, the MPs are free to include/exclude information. As several biographical pages are currently not linked correctly on the parliamentary website, the data about these persons is incomplete.
+Note that the political functions, employment and education follow no standardised pattern, the MPs are free to include/exclude information. As several biographical pages are currently not linked correctly on the parliamentary website, the data about these persons is incomplete. A few missing birth dates were added using personal websites, wikipedia and meineabgeordneten.at.
 
 As the data was scraped automatically errors due to inconsistent tags are possible.
 
