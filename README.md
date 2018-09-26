@@ -1,5 +1,5 @@
-# Nationalratsabgeordnete, Mitglieder des Bundesrates und Abgeordnete zum Europäischen Parlament Österreich/MPs Austria 1920-2017
-Current version/last update: 4.12.2017
+# Nationalratsabgeordnete, Mitglieder des Bundesrates und Abgeordnete zum Europäischen Parlament Österreich/MPs Austria 1920-2018
+Current version/last update: 26.9.2018
 
 The JSON contains most of the available information about Austrian Members of Parliament (1. Chamber/Nationalrat and 2. Chamber/Bundesrat) since 1920 as well as information about Austrias Members of the European Parliament since 1995. The data was scraped of the official website of the [Austrian parliament](https://www.parlament.gv.at).
 
@@ -35,7 +35,7 @@ nr_complete.json: the fields in the file for the 1. Chamber (Nationalrat, electe
 
 <br>
 <br>
-br_complete.json: the fields for the 2. Chamber (Bundesrat, members are appointed by the regional parliaments) are mostly the same, with three differences:
+br_complete.json: the fields for the 2. Chamber (Bundesrat, members are appointed by the regional parliaments) are mostly the same, with four differences:
 
 * the id starts with "br_"
 * the field "nr" is renamed "br" (for Bundesrat): array; contains objects of each independent time period the person held a seat in the second chamber; the object itself contains the "club" the person was a member of, the start and the end date (strings; dd.mm.yyyy); if the person holds currently a seat, "end" = "ongoing"
@@ -44,7 +44,7 @@ br_complete.json: the fields for the 2. Chamber (Bundesrat, members are appointe
 
 <br>
 <br>
-eup_complete.json: the fields for the European Parliament are mostly the same, with three differences:
+eup_complete.json: the fields for the European Parliament are mostly the same, with four differences:
 
 * the id starts with "eup_"
 * the field "nr" is renamed "eup" (for European Parliament): array; contains objects of each independent time period the person held a seat in the second chamber; the object itself contains the "club" the person was a member of, the start and the end date (strings; dd.mm.yyyy); if the person holds currently a seat, "end" = "ongoing"
