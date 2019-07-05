@@ -1,5 +1,5 @@
-# Nationalratsabgeordnete, Mitglieder des Bundesrates und Abgeordnete zum Europäischen Parlament Österreich/MPs Austria 1920-2018
-Current version/last update: 26.9.2018
+# Nationalratsabgeordnete, Mitglieder des Bundesrates und Abgeordnete zum Europäischen Parlament Österreich/MPs Austria 1920-2019
+Current version/last update: 5.7.2019
 
 The JSON contains most of the available information about Austrian Members of Parliament (1. Chamber/Nationalrat and 2. Chamber/Bundesrat) since 1920 as well as information about Austrias Members of the European Parliament since 1995. The data was scraped of the official website of the [Austrian parliament](https://www.parlament.gv.at).
 
@@ -9,13 +9,13 @@ nr_complete.json: the fields in the file for the 1. Chamber (Nationalrat, electe
 * whole_name: string; name of the person, including academic titles
 * given_name: string; first name(s) of the person
 * surname: string; last name of the person (for sorting and stuff)
-* title: array; the first entry always contains all titles coming ahead of the name, the second one all titles after the name (empty if no titles are present)
+* title: array; the first entry contains all titles coming ahead of the name, the second one all titles after the name (empty if no titles are present)
 * academic: boolean; true if person holds an academic title
 * sex: string; m for man, w for woman
 * birth: string; date of birth (dd.mm.yyyy)
 * place_of_birth: string; place of birth
 * place_of_birth_addition: string; sometimes there is additional information given on the place of birth, like a country or a state - note that this is very selective in the source file and the values are not standardised (you might find "Niederöstereich" as well as "NÖ", although I've tried to correct at least this inconsistency)
-* death: string; date of death (dd.mm.yyyy) - empty if still alive
+* death: string; date of death (dd.mm.yyyy) - empty if still alive; note that several entries from the beginning of the 20th century are not in this format, but only vague like giving a month and year
 * place_of_death: string; place of death
 * place_of_death_addition: string; see above
 * active: boolean; true if person currently holds a seat in the national assembly
@@ -53,7 +53,7 @@ eup_complete.json: the fields for the European Parliament are mostly the same, w
 
 <br>
 <br>
-Note that the political functions, employment and education follow no standardised pattern, the MPs are free to include/exclude information. As several biographical pages are currently not linked correctly on the parliamentary website, the data about these persons is incomplete. A few missing birth dates were added using personal websites, wikipedia and meineabgeordneten.at.
+Note that the political functions, employment and education follow no standardised pattern, the MPs are free to include/exclude information. As several biographical pages are currently not linked correctly on the parliamentary website, the data about these persons is incomplete.
 
 As the data was scraped automatically errors due to inconsistent tags are possible.
 
