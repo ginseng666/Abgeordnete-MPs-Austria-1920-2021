@@ -3,6 +3,8 @@ Current version/last update: 29.5.2020
 
 The JSON contains most of the available information about Austrian Members of Parliament (1. Chamber/Nationalrat and 2. Chamber/Bundesrat) since 1920 as well as information about Austrias Members of the European Parliament since 1995. The data was scraped of the official website of the [Austrian parliament](https://www.parlament.gv.at).
 
+A list of all current MPs on regional level in Austria can be found here: [https://www.austriandemocracylab.at/landtage/](https://www.austriandemocracylab.at/landtage/)
+
 nr_complete.json: the fields in the file for the 1. Chamber (Nationalrat, elected directly) are:
 
 * id: string; just an identifier, "nr_" + running number
