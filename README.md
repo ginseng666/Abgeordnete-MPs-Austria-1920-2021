@@ -1,5 +1,5 @@
-# Nationalratsabgeordnete, Mitglieder des Bundesrates und Abgeordnete zum Europäischen Parlament Österreich/MPs Austria 1920-2020
-Current version/last update: 29.5.2020
+# Nationalratsabgeordnete, Mitglieder des Bundesrates und Abgeordnete zum Europäischen Parlament Österreich/MPs Austria 1920-2021
+Current version/last update: 22.01.2021
 
 The JSON contains most of the available information about Austrian Members of Parliament (1. Chamber/Nationalrat and 2. Chamber/Bundesrat) since 1920 as well as information about Austrias Members of the European Parliament since 1995. The data was scraped of the official website of the [Austrian parliament](https://www.parlament.gv.at).
 
@@ -61,4 +61,4 @@ As the data was scraped automatically errors due to inconsistent tags are possib
 
 all data (c) https://www.parliament.gv.at
 
-JSON (c) Flooh Perlot 2020 (see licence)
+JSONs CC BY 4.0 Flooh Perlot 2021 (see licence)
