@@ -1,5 +1,5 @@
 # Nationalratsabgeordnete, Mitglieder des Bundesrates und Abgeordnete zum Europäischen Parlament Österreich/MPs Austria 1920-2021
-Current version/last update: 22.01.2021
+Current version/last update: 22.12.2021
 
 The JSON contains most of the available information about Austrian Members of Parliament (1. Chamber/Nationalrat and 2. Chamber/Bundesrat) since 1920 as well as information about Austrias Members of the European Parliament since 1995. The data was scraped of the official website of the [Austrian parliament](https://www.parlament.gv.at).
 
@@ -55,7 +55,7 @@ eup_complete.json: the fields for the European Parliament are mostly the same, w
 
 <br>
 <br>
-Note that the political functions, employment and education follow no standardised pattern, the MPs are free to include/exclude information. As several biographical pages are currently not linked correctly on the parliamentary website, the data about these persons is incomplete.
+Note that the political functions, employment and education follow no standardised pattern, the MPs are free to include/exclude information. As several biographical pages are currently not linked correctly on the parliamentary website, the data about these persons is incomplete. Not all birth/death-dates are provided, in one case (Maria Köstler) only the month and year of death (11/1965) are available.
 
 As the data was scraped automatically errors due to inconsistent tags are possible.
 
