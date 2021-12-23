@@ -55,14 +55,12 @@ eup_complete.json: the fields for the European Parliament are mostly the same, w
 
 <br>
 <br>
-Note that the political functions, employment and education follow no standardised pattern, the MPs are free to include/exclude information. As several biographical pages are currently not linked correctly on the parliamentary website, the data about these persons is incomplete.
-
-As the data was scraped automatically errors due to inconsistent tags are possible.
+Note that the political functions, employment and education follow no standardised pattern, the MPs are free to include/exclude information. As several biographical pages are currently not linked correctly on the parliamentary website, the data about these persons is incomplete. The same goes for some inconsistent tags. 
 <br>
 <br>
-Known issues
-* nr_complete: The death date of Maria Köstler is included as 11/1965.
-* nr_complete: In the first session after World War II, the parliament lists two entries for each of four politicians of the KPÖ, once they are listed as members of the KPÖ-club, once as members of the LB-club (Linksblock). Start and end date of those entries are identical. Those are Viktor Elser, Ernst Fischer, Franz Honner and Johann Koplenig.
+Known issues:
+* nr_complete: The death date of Maria Köstler is only included as 11/1965.
+* nr_complete: In the first two sessions after World War II, the parliament lists two entries for several politicians of the KPÖ, once they are listed as members of the KPÖ-club, once as members of the LB-club (Linksblock). Start and end date of those entries are identical.
 
 all data (c) https://www.parliament.gv.at
 
